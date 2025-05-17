@@ -5,7 +5,7 @@ import userEvent, {type UserEvent} from '@testing-library/user-event'
 
 const getFormElements = () => {
   return {
-    titleInput: screen.getByRole('texbox', {name: /title/i}),
+    titleInput: screen.getByRole('textbox', {name: /title/i}),
     descriptionInput: screen.getByRole('textbox', {name: /description/i}),
     categorySelect: screen.getByRole('combobox', {name: /category/i}),
     submitButton: screen.getByRole('button', {name: /add task/i}),
